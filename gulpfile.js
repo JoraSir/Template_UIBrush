@@ -14,7 +14,7 @@ var gulp        = require('gulp'),          // Подключаем Gulp
     Promise     = require('es6-promise').Promise; // Подключаем библиотеку PostCSS нужна для работы с Node.js 0.10 
 	 
 gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('app/sass/**/*.+(scss|sass)') // Берем источник
+    return gulp.src('app/sass/**/*.+(scss|sass)')
         .pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результат в папку app/css
@@ -22,7 +22,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 });
 
 gulp.task('scripts', function() {
-    return gulp.src([ // Берем все необходимые библиотеки
+    return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',  // jQuery
         'app/libs/jquery-knob/dist/jquery.knob.min.js'  // Knob
 
@@ -50,7 +50,7 @@ gulp.task('clear', function() {
 });
 
 gulp.task('css-libs', ['sass'], function() {
-    return gulp.src(['app/css/main.css','app/css/libs.css'])  // Выбираем файл для минификации
+    return gulp.src('app/css/main.css')  // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
