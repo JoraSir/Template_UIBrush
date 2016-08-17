@@ -1,0 +1,64 @@
+@import "bourbon/bourbon";
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.top-menu{display:none;}
+	.social{ text-align: right; padding-right: 80px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}	
+	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+ 		.top-line{ padding-bottom:15px;
+ 			.social-wrap{
+  					.social.my{line-height: 40px; letter-spacing:em(0);}
+  					.toggle-menu{ line-height: 40px; width: 40px; height: 40px;}
+     								}
+					.logo img { width: 80px; }
+				}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

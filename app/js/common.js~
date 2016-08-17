@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	//Анимация togle-menu.
+	$(".toggle-menu").click(function(){
+		$(this).toggleClass("on");
+});
+
+	//SVG Fallback, если не поддерживается svg-формат, то подключает вместо него png.
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
+});

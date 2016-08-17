@@ -1,0 +1,25 @@
+h1, h2, h3 {
+  color: #333; }
+
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 15px; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "RobotoRegular", sans-serif;
+  overflow-x: hidden; }
+
+.hidden {
+  display: none; }

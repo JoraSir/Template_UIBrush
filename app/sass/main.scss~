@@ -1,0 +1,103 @@
+@import "bourbon/bourbon";
+@import "header";
+
+
+.section{
+	padding-top: 80px;
+	h2{padding: 0 0 30px 0;}
+}
+.Appoach-box{padding-bottom: 30px;
+	img{display:block; margin:0 auto 45px; 
+		&:hover{cursor: pointer;}	
+	}
+	h1 {text-align:center;}
+	p{text-align:center;color: #7b7b7b; padding: 0 15px;}
+
+}
+.quote{font-family: "ProximaNova-Regular"; font-size:em(150px);line-height: 0px;color:#dce3e9; padding: 0;margin:0; position: absolute;}
+.quote-box{
+	border-top:1px solid #e4eaef;
+	border-bottom:1px solid #e4eaef;
+	background-color:#f0f5f9;	
+	padding: 75px 0 30px 0;
+	.quote-wrap{ position:relative;
+					 &::before{content:''; background:#c1c1c1; position:absolute; height:5px; width:185px; bottom:0; left:50%; 
+					 				transform:translate(-50%);display:block; }
+					 p{padding: 0 15% 30px 15%;position: relative; color: #b0b6bb; quotes: "\201c" "\201d";
+						&::before{content: open-quote;top:40px;left: 5%;@extend.quote; }
+						&::after{content: close-quote;bottom:0; right: 5%;@extend.quote;}
+		}
+	}
+	.name{text-align:center; padding-top: 10px;font-family: "ProximaNova-Semibold",sans-serif;
+			font-size: em(22px); color:#72787c; 
+			span{font-family: "ProximaNova-Light",sans-serif;  color: #b0b6bb;font-weight:lighter;}	
+			}
+}
+.box-col{position: relative; padding-bottom: 30px;
+		 &::before{content:''; background:#c1c1c1; position:absolute; height:8px; width:100%; top:-30px; left:0;	display:block; }
+			.box{margin-bottom: 25px; position: relative;width: 100%; height: auto;overflow:hidden; background:#505c65;transition: 1s;
+				&:hover a{z-index: 1000; }
+				&:hover img{opacity: 0.3;}
+				img{ width: 100%; display:block; height: auto;position:relative;z-index: 101;transition: 1s;}
+				.box-link{position:absolute;top:0%;left:0%;z-index:51; text-decoration: none; width:100%; color: #fff;
+								font-family: "ProximaNova-Semibold",sans-serif;
+								h3{font-family: "ProximaNova-Semibold",sans-serif;color: #fff; padding: 15px 0 15px 0; background-color: #313f4a; margin: 0; text-align:center;}
+								ul
+									li{list-style: none;
+										&::before{content:'-'; letter-spacing: 5px;}									
+									}				
+				}
+			
+		}
+}
+
+.services-box{
+	ul{padding:0;
+		li{list-style: none; display:block;
+			a{font-family: "ProximaNova-Regular",sans-serif;  color: #8f8f8f; font-size: em(13px); line-height: em(20px);}
+		}
+	}
+}
+.footer{ background-color: #333a40; padding: 35px 0 25px 0;
+			h4{color: #fff; font-weight: normal;}
+			p,a{color: #8f8f8f;font-size: em(14px); font-style: normal; font-family: "ProximaNova-Regular",sans-serif;}
+			.contact-box{	padding-bottom: 30px;background-color: #333a40;
+				a{text-decoration: underline; font-weight: bold;
+				&:hover{text-decoration: none;}			
+					}	
+				}
+				.navigation-box{padding-bottom: 30px;background-color: #333a40;
+					.bottom-menu{
+							ul{padding: 0;
+									li{list-style: none;
+											&::before{content:'-'; letter-spacing: 5px; color:#8f8f8f;}	
+											a{ text-decoration: none;
+												&:hover{text-decoration: underline;}
+												text-transform: capitalize;
+												}
+									}		
+					}				
+				}
+			}
+			.submit-box{ padding-bottom: 30px; margin: 0 auto;background-color: #333a40;
+							label{margin-bottom: 10px; display: block;}
+							input{display: block; width: 100%; border: 1px solid #8a8c8d; border-radius: 3px; text-indent: 20px;color: #8b8b8b;
+									padding: 9px 5px 9px 0; box-shadow:inset 0 1px #f5f5f5;
+									&:focus{box-shadow:inset 0 4px #f5f5f5;}
+									@include placeholder { color: #8b8b8b;}				
+									}
+							.button-wrap{ text-align:right;padding-top: 5px;
+							button{background-color: #4b79a2; display: inline-block; border:1px solid #2a4257;border-radius: 3px;
+									font-family: "ProximaNova-Semibold",sans-serif;  color: #fff; font-size: em(15px); line-height: em(18px);
+									box-shadow:inset 0 3px #6994b9; padding: 13px 25px; text-shadow: 1px 1px 2px #111;transition: all .5s ease;
+									&:hover{background-color: #5b88b1;}
+									&:active{background-color: #3a5f80;box-shadow:inset 0 3px #2a4257;}
+						}
+			}
+}
+		.bottom-line{border-top: 1px solid #3c444b;margin-top: 35px;
+							p{padding-left: 10%;font-family: "ProximaNova-Light",sans-serif; font-size: em(15px); line-height: em(40px);}
+				
+		}
+}
+@import "media";
