@@ -319,7 +319,7 @@ button {
 
 .about {
   background-image: url(../img/about_bg.jpg);
-  background-position: 100% 0%;
+  background-position: 100% 0;
   background-repeat: no-repeat;
   height: 214px; }
   .about_content {
@@ -376,7 +376,7 @@ button {
     top: 50%;
     left: 0;
     margin-top: -40px; }
-    .know_count_color {
+    .know_count_val {
       font-family: "OpenSansRegular", sans-serif;
       color: #a2a2a2; }
 
