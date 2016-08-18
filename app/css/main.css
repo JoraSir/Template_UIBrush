@@ -748,7 +748,7 @@ button {
     border: 1px solid #3b3b3b;
     -webkit-border-radius: 1px;
             border-radius: 1px;
-    width: 290px;
+    width: 270px;
     margin-bottom: 10px;
     padding-left: 15px; }
     .contact_input::-webkit-input-placeholder {
@@ -776,7 +776,7 @@ button {
     border: 1px solid #3b3b3b;
     -webkit-border-radius: 1px;
             border-radius: 1px;
-    width: 290px;
+    width: 270px;
     margin-bottom: 15px;
     padding-left: 15px;
     line-height: 45px; }
