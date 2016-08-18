@@ -741,13 +741,14 @@ button {
   .contact_form {
     width: 100%; }
   .contact_input {
+    display: block;
     background-color: #141414;
     height: 45px;
     line-height: 45px;
     border: 1px solid #3b3b3b;
     -webkit-border-radius: 1px;
             border-radius: 1px;
-    width: 270px;
+    width: 290px;
     margin-bottom: 10px;
     padding-left: 15px; }
     .contact_input::-webkit-input-placeholder {
@@ -769,12 +770,13 @@ button {
     .contact_input:focus {
       border: 1px solid #fa5b3c; }
   .contact_textarea {
+    display: block;
     background-color: #141414;
     height: 165px;
     border: 1px solid #3b3b3b;
     -webkit-border-radius: 1px;
             border-radius: 1px;
-    width: 270px;
+    width: 290px;
     margin-bottom: 15px;
     padding-left: 15px;
     line-height: 45px; }
