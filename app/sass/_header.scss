@@ -34,6 +34,9 @@ p{
 	font-family: "OpenSansLight", sans-serif;
 	line-height: 21px;
 }
+a{
+	text-decoration: none;
+}
 button{
 	color: #fff;
 	font-size: 22px;
@@ -70,7 +73,6 @@ button{
 	font-size: em(30px);
 	font-family: "OpenSansBold", sans-serif;
 	line-height: 21px;
-	text-decoration: none;
 	&_color{color: #131313;}
 }
 .main_menu{
@@ -86,7 +88,6 @@ button{
 		font-size: em(13px);
 		font-family: "OpenSansBold", sans-serif;
 		line-height: 21px;
-		text-decoration: none;
 		padding: 5px 10px;
 		transition: all 0.5s ease;
 		&:hover,

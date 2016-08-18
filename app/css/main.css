@@ -175,6 +175,9 @@ p {
   font-family: "OpenSansLight", sans-serif;
   line-height: 21px; }
 
+a {
+  text-decoration: none; }
+
 button {
   color: #fff;
   font-size: 22px;
@@ -220,8 +223,7 @@ button {
   color: #fa5b3c;
   font-size: 1.875em;
   font-family: "OpenSansBold", sans-serif;
-  line-height: 21px;
-  text-decoration: none; }
+  line-height: 21px; }
   .logo_color {
     color: #131313; }
 
@@ -240,7 +242,6 @@ button {
   font-size: 0.8125em;
   font-family: "OpenSansBold", sans-serif;
   line-height: 21px;
-  text-decoration: none;
   padding: 5px 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -324,8 +325,7 @@ button {
   height: 214px; }
   .about_content {
     max-width: 675px;
-    padding-right: 25px;
-    margin-right: 455px; }
+    padding-right: 480px; }
   .about_title {
     color: #222222;
     padding-bottom: 30px; }
@@ -743,6 +743,7 @@ button {
   .contact_input {
     background-color: #141414;
     height: 45px;
+    line-height: 45px;
     border: 1px solid #3b3b3b;
     -webkit-border-radius: 1px;
             border-radius: 1px;

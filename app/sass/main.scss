@@ -25,8 +25,7 @@
   height: 214px;
   &_content{
     max-width:675px;
-    padding-right: 25px;
-    margin-right: 455px;
+    padding-right: 480px;
   }
   &_title{
     color: #222222;
@@ -123,7 +122,7 @@
     display: flex;
     justify-content:center;
     &_item{
-      margin-right: 10px;
+       margin-right: 10px;
       .twittericon-{
         color: #00aeef;
       }
@@ -450,6 +449,7 @@
   &_input{
     background-color: #141414;
     height: 45px;
+    line-height: 45px;
     border:1px solid #3b3b3b;
     border-radius:1px;
     width:270px;
