@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(function() {
-		$(".know_dial").knob({
+		$(".count_diagram").knob({
 
 		});
 	});
