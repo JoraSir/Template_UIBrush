@@ -78,7 +78,7 @@ button{
 	&_list{
 		display: flex;
 	}
-	&_item{
+	&_item:not(:first-child){
 		margin-left: 10px;
 	}
 	&_link{
@@ -89,6 +89,7 @@ button{
 		line-height: 21px;
 		padding: 5px 10px;
 		transition: all 0.5s ease;
+		display: inline-block;
 		&:hover,
 		&.active{
 			color: #ffffff;
